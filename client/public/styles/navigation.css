@@ -1,0 +1,104 @@
+body {
+    /* background-image: url('../images/hotel_3.png'); */
+    background-color: #32485e;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+/* 
+.home-page {    
+    background-image: url(../images/hotel_3.png);
+} */
+
+.auth {
+    width: 100px;
+    margin: 8em auto;
+}
+
+header,
+footer {
+    background-color: #29303c;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.home {
+    font-size: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    position: relative;
+    padding: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    background-color: #29303c;
+    color: white;
+    margin-bottom: auto;
+}
+
+header nav {
+    font-size: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+
+header nav>* {
+    float: left;
+}
+
+footer {
+    padding: 0.5em;
+    width: 100%;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+}
+
+nav a {
+    margin: 0 0.5em;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: rgb(113 175 193);
+    font-weight: bolder;
+}
+
+.home:hover {
+    color: rgb(113 175 193);
+}
+
+#user,
+#guest {
+    margin: 0;
+    padding: 0;
+}
+
+.section-site-header {
+    color: #fff;
+    background-color: #29303c;
+}
+
+.section-site-header .container {
+    
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.section-site-header .site-title {
+    display: none;
+}
+
+.section-site-header a {
+    color: #fff;
+}
