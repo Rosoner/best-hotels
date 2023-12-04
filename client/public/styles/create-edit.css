@@ -1,5 +1,6 @@
 #create-page,
-#edit-page {
+#edit-page,
+#info-page {
     position: relative;
     width: 800px;
     height: auto;

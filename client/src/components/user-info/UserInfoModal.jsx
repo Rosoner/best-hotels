@@ -27,7 +27,7 @@ const UserInfoModal = ({
             <div className="backdrop" onClick={onClose}></div>
             <div className="modal">
                 <div className="detail-container">
-                    <header className="headers">
+                    <header className="headers-info">
                         <h2>User Details:</h2>
                         <button className="btn close" onClick={onClose}>
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark"
@@ -45,12 +45,12 @@ const UserInfoModal = ({
                         </div> */}
                         <div className="brand-logo"></div>
                         <div className="user-details">
-                            <p>User Id: <strong>{userId}</strong></p>
-                            <p style={{ color: 'red',}}>
+                            <p style={{ color: 'darkblue',}}>User Id: <strong>{userId}</strong></p>
+                            <p style={{ color: 'darkred',}}>
                                 User Name:
                                 <strong> {username} </strong>
                             </p >
-                            <p style={{ color: 'orange',}}>
+                            <p style={{ color: 'darkorange',}}>
                                 Email: <strong>{email}</strong></p>
                             {/* <p>Phone Number: <strong>{user.phoneNumber}</strong></p> */}
                             {/* <p>
@@ -59,7 +59,7 @@ const UserInfoModal = ({
                             </p> */}
 
                             {/* <p>Created on: <strong>{formatDate({createdAt})}</strong></p> */}
-                            <p>Created on: <strong>{formatDate({createdAt})}</strong></p>
+                            <p style={{ color: 'darkgreen',}}>Created on: <strong>{formatDate({createdAt})}</strong></p>
                             {/* <p>Modified on: <strong>{formatDate(user.updatedAt)}</strong></p> */}
                         </div>
                     </div>

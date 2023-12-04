@@ -22,19 +22,16 @@ export default function MyAccount() {
 
 
     return (
-        <section id="create-page" className="auth">
+        <section id="info-page" className="auth-info">
 
             <section>
 
                 <div>
-
-
                     {showInfo && (
                         <UserInfoModal
                             onClose={() => setShowInfo(false)}
                         />
                     )}
-
 
                     <div className="slogan">
                         <h2 style={{ color: 'yellow', }}>User info:</h2>

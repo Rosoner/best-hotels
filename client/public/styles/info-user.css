@@ -23,7 +23,7 @@
     max-height: 90vh;
     margin: auto;
     border-radius: 20px;
-    background-color: white;
+    background-color: #d7dff3;
     padding: 1rem;
     box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
     z-index: 30;
@@ -32,7 +32,7 @@
 
   .detail-container {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
   }
 
   .headers {
@@ -52,7 +52,7 @@
   }
 
   .user-details {
-    flex: 8;
+    flex: initial;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -108,3 +108,21 @@
     width: 4vh;
     height: 4vh;
   }
+
+  .auth-info {
+    width: 100px;
+    margin: 12em  auto 26em auto;    
+}
+
+.headers-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 5px 0px;
+  border-bottom: 1px solid #ccc;
+  background-color: rgb(95 115 151);
+  color: white;
+  border-radius: 15px;
+}
+
