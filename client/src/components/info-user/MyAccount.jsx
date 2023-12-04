@@ -1,154 +1,89 @@
-// import { useState, useEffect, useContext } from "react";
-// import { useParams, useNavigate, Link } from 'react-router-dom';
-// import AuthContext from '../../contexts/authContext';
-// import * as authService from "../../services/authService"
-// import styles from './MyAccount.module.css'
-
-
-// export default function MyAccount() {
-//     const [user, setUser] = useState({});
-//     const { id } = useParams();
-//     const navigate = useNavigate();
-//     const {
-//         isAuthenticated,
-//         username,
-//         email,
-//         userId,
-//         // userImage,
-//     } = useContext(AuthContext);
-
-
-//     useEffect(() => {
-//         authService.getCurrentUser(userId)
-//             .then(result => setUser(result))
-//             .catch((err) => {
-//                 navigate('/');
-//             });
-//     }, [id]);
-
-//     return (
-//         <>
-//             {isAuthenticated && (
-//                 <div className="bg-2 section" id="contact">
-//                     <div
-//                         className={`inner ${styles.userAccountDetailsBackground}`}
-//                         data-topspace={50}
-//                         data-bottomspace={20}
-//                         data-image="./src/assets/flavours/bigsmokebbq/images/content/background-6.jpg"
-//                     >
-//                         <div className="container">
-//                             <h3 className="hdr4">My Account</h3>
-//                             <div className="easyBox full">
-//                                 <h4 className="hdr5">
-//                                     <span>Username: {username}</span>
-//                                 </h4>
-//                                 <h4 className="hdr5">
-//                                     <span>Email: {email}</span>
-//                                 </h4>
-//                                 {/* <h4 className="hdr5">
-//                                     <span>Image: {userImage}</span>
-//                                 </h4> */}
-//                                 <p className="bigger">
-//                                     <Link to={`/myaccount/edit`}><button id="action-save" className={`btn ${styles.editBtn}`} type="submit">Edit</button></Link>
-//                                 </p>
-//                                 <p className="bigger">
-//                                     <button id="action-save" className={`btn ${styles.delBtn}`} type="submit">Delete</button>
-
-//                                 </p>
-
-//                             </div>
-//                             {/* / easyBox */}
-//                         </div>
-//                     </div>
-//                 </div>
-//             )}
-//             {!isAuthenticated && (
-//                 <div className="bg-2 section" id="contact">
-
-//                     <div
-//                         className={`inner ${styles.myAccountBackground}`}
-//                         data-topspace={50}
-//                         data-bottomspace={20}
-//                         data-image="./src/assets/flavours/bigsmokebbq/images/content/background-6.jpg"
-//                     >
-//                         <div className="container">
-//                             <h3 className="hdr4">My Account</h3>
-//                             <div className="easyBox full">
-//                                 <h4 className="hdr5">
-//                                     <span>Do you have an account with us?</span>
-//                                 </h4>
-//                                 <div className="row nomargin">
-//                                     <div className="col-md-5">
-//                                         <h4 className="hdr2 special">Not registered yet? If you want to be up to date with us you can register here.</h4>
-//                                         <input type="hidden" name="field_[]" defaultValue=" " />
-//                                         <button type="submit" className="btn btn-default" ><Link to="/register">Register</Link></button>
-
-//                                     </div>
-//                                     <div className="col-md-2"></div>
-//                                     <div className="col-md-5">
-//                                         <h4 className="hdr2 special">Already have an account? Please login to proceed!</h4>
-
-
-//                                         <button className="btn btn-default" type="button"><Link to="/login">Login</Link></button>
-
-//                                     </div>
-//                                 </div>
-//                             </div>
-//                             {/* / easyBox */}
-//                         </div>
-//                     </div>
-//                 </div>
-//             )}
-
-//         </>
-//     )
-// }
-
 
 import AuthContext from '../../contexts/authContext';
-import {  useContext } from "react";
+import { useContext, useState } from "react";
+
+//
+import UserInfoModal from "../user-info/UserInfoModal.jsx";
+
 
 
 export default function MyAccount() {
-    
-        const {
-            email,
-            username,
-            isAuthenticated,
-            
-        } = useContext(AuthContext);
+
+    const [showInfo, setShowInfo] = useState(false);
+
+    const {
+        isAuthenticated,
+
+    } = useContext(AuthContext);
+
+    const infoClickHandler = () => {
+        setShowInfo(true);
+    };
+
 
     return (
-        <section>
-           
+        <section id="create-page" className="auth">
+
             <section>
-                
+
                 <div>
+
+
+                    {showInfo && (
+                        <UserInfoModal
+                            onClose={() => setShowInfo(false)}
+                        />
+                    )}
+
+
                     <div className="slogan">
-                        <h2 style={{ color: 'yellow',}}>Account info!</h2>
+                        <h2 style={{ color: 'yellow', }}>User info:</h2>
                     </div>
 
-                            {isAuthenticated && (
-                            <div id="user">      
-                                {/* <h2 style={{ color: 'yellow',}}>Account info!</h2>  */}
-                                <br></br>  
-                                <br></br>     
-                                <span style={{ color: 'yellow',}}>You can create your own publication in this blog!
-                                Evryone loged in user can write some comments bellow your post.</span> 
-                                <br></br>  
-                                <br></br>           
-                                <span style={{ color: 'yellow',}}>User name: {username}</span>
+                    {isAuthenticated && (
+                        <div id="user">
+                            
+                            <br></br>
+                            <br></br>
+                            <span style={{ color: 'yellow', }}>You can create your own publication with your favourite hotel in this blog! 
+                                Also is possible to edit or delete your post in case you are logged in.
+                                Is allowed on all users to write comments about your post
+                                All guests can only read your publication.
                                 <br></br>
-                                <span style={{ color: 'yellow',}}>Email: {email}</span>
-                                {/* <Link to="/myaccount">My account</Link> */}
-                            </div>
-                        )}
+                                <br></br>
+                                Please click button bellow for user details info.
+                            </span>
+                            
+                            {/* <button className="details-button" title="Info" onClick={infoClickHandler}>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info"
+                                    className="svg-inline--fa fa-info" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="-150 0 512 612">
+                                    <path fill="currentColor"
+                                        d="M160 448h-32V224c0-17.69-14.33-32-32-32L32 192c-17.67 0-32 14.31-32 32s14.33 31.1 32 31.1h32v192H32c-17.67 0-32 14.31-32 32s14.33 32 32 32h128c17.67 0 32-14.31 32-32S177.7 448 160 448zM96 128c26.51 0 48-21.49 48-48S122.5 32.01 96 32.01s-48 21.49-48 48S69.49 128 96 128z">
+                                    </path>
+                                </svg>
+                                user
+                            </button> */}
+
+
+                        </div>
+                    )}
 
                 </div>
-                {/* <img src="../images/hotel_3.png" alt="hero" /> */}
-            <div>
+                <br></br>
                 
-            </div>
+                <div className='info'>
+                    <button className="btn info-btn" title="Info" onClick={infoClickHandler}>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user details"
+                            className="svg-inline--fa fa-info" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="-150 0 512 612">
+                            <path fill="currentColor"
+                                d="M160 448h-32V224c0-17.69-14.33-32-32-32L32 192c-17.67 0-32 14.31-32 32s14.33 31.1 32 31.1h32v192H32c-17.67 0-32 14.31-32 32s14.33 32 32 32h128c17.67 0 32-14.31 32-32S177.7 448 160 448zM96 128c26.51 0 48-21.49 48-48S122.5 32.01 96 32.01s-48 21.49-48 48S69.49 128 96 128z">
+                            </path>
+                        </svg>
+                        
+                    </button>
+                </div>
 
             </section>
 

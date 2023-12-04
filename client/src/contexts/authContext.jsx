@@ -65,6 +65,7 @@ const logoutHandler = () => {
         email: auth.email,
         userId: auth._id,
         isAuthenticated: !!auth.accessToken,
+        createdAt: auth._createdOn
     };
 
     return (
