@@ -80,6 +80,10 @@ export default function HotelDetails() {
                                      
                 </div>
 
+
+
+                {/* comments */}
+
                 <div className="details-comments">
                     <div id='header-comment'>Comments:</div>
                     <ul>
