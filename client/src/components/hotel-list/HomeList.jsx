@@ -2,17 +2,26 @@ import { useEffect, useState } from 'react';
 
 import * as hotelService from '../../services/hotelService.js';
 import HotelListItem from './hotel-list-item/HotelListItem.jsx';
+import Spinner from "../../utils/Spinner.jsx";
 
 export default function HotelList() {
     const [hotels, setHotels] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
+        setIsLoading(true);
+
         hotelService.getAll()
-            .then(result => setHotels(result));
+            .then(result => setHotels(result))
+            .catch(err => console.log(err))
+            .finally(() => setIsLoading(false));
     }, []);
 
     return (
         <section id="catalog-page">
+
+            {isLoading && <Spinner />}
+
             <h1>All Hotels</h1>
 
             {hotels.map(hotel => (

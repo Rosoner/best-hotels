@@ -1,40 +1,7 @@
-// import { useState, useEffect } from "react";
-// import AuthContext from '../../../contexts/authContext';
-// import {  useContext, useState } from "react";
-// import * as commentService from '../../../services/commentService.js';
-// import { useParams } from "react-router-dom";
-
-// import * as userService from '../services/userService';
-// import { formatDate } from "../utils/dataUtils";
-
 
 const CommentModal = ({ onClose, onCreate}) => {
 
-    // const { hotelId } = useParams();
-    // const [comments, setComments] = useState([]);
-
-
-    // const {        
-    //     username,                
-    // } = useContext(AuthContext);
-
-
-    // const addCommentHandler = async (e) => {
-    //     e.preventDefault();
-
-    //     const formData = new FormData(e.currentTarget);
-
-    //     const newComment = await commentService.create(
-    //         hotelId,
-    //         formData.get('comment')
-    //     );
-
-    //     newComment.owner = { username };
-
-        
-    // }
-
-
+ 
     return (
         <div className="overlay">
             <div className="backdrop" onClick={onClose}></div>
