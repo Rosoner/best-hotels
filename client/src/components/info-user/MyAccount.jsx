@@ -42,10 +42,11 @@ export default function MyAccount() {
                             
                             <br></br>
                             <br></br>
-                            <span style={{ color: 'yellow', }}>You can create your own publication with your favourite hotel in this blog! 
-                                Also is possible to edit or delete your post in case you are logged in.
-                                Is allowed on all users to write comments about your post
-                                All guests can only read your publication.
+                            <span style={{ color: 'yellow', }}>
+                                You can create your own publication with your favourite hotel in this blog! 
+                                Also is possible to edit or delete your post in case that you are logged in.
+                                Is allowed on all users to write comments about their posts or another posts.
+                                All guests can only read publications and comments.
                                 <br></br>
                                 <br></br>
                                 Please click button bellow for user details info.
