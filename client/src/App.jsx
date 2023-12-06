@@ -58,10 +58,11 @@ function App() {
                   <Route path={Path.MyAccount} element={<MyAccount />} />
                   <Route path={Path.Logout} element={<Logout />} />
                 </Route>
-
             </Routes>
+            
+            <Footer />
         </div>
-        <Footer />
+        
     </AuthProvider >
 )
 }

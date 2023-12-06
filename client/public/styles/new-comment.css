@@ -1,0 +1,29 @@
+.headers-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0px 0px;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(69 85 105);
+    color: white;
+    border-radius: 15px;
+  }
+
+  .btn.close {
+    background-color: transparent;
+    padding: 5px 10px;
+    height: auto;
+}
+
+.btn {
+    padding: 5px;
+    color: white;
+    opacity: 0.7;
+    width: 30px;
+    height: 30px;
+}
+
+.btn.close svg {
+    color: white;
+}
