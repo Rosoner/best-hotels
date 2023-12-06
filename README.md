@@ -23,4 +23,4 @@ Logout Send an authorized GET request to /users/logout.
 
 Get User Details Send an authorized GET request. The service will return the record of the user, associated with the passed-in session token.
 
-Start the client with command "npm run dev".
+Start the client, "npm i" and after that with command "npm run dev".
