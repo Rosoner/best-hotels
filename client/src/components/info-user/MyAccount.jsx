@@ -70,8 +70,8 @@ export default function MyAccount() {
                 </div>
                 <br></br>
                 
-                <div className='info'>
-                    <button className="btn info-btn" title="Info" onClick={infoClickHandler}>
+                <div className='info-user'>
+                    <button className="btn info-btn" title="See more info for your account" onClick={infoClickHandler}>
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user details"
                             className="svg-inline--fa fa-info" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="-150 0 512 612">

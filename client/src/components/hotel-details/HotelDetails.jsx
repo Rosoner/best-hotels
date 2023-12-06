@@ -57,7 +57,7 @@ export default function HotelDetails() {
    
 
     const deleteButtonClickHandler = async () => {
-        const hasConfirmed = confirm(`Are you sure you want to delete ${hotel.name}`);
+        const hasConfirmed = confirm(`Are you sure you want to delete hotel: ${hotel.name}`);
 
         if (hasConfirmed) {
             await hotelService.remove(hotelId);
@@ -100,8 +100,8 @@ export default function HotelDetails() {
 
                     {userId === hotel._ownerId && isAuthenticated && (
                         <div className="buttons">
-                            <Link to={`/hotels/${hotelId}/edit`} className="button-edit">Edit</Link>
-                            <button className="button" onClick={deleteButtonClickHandler}>Delete</button> 
+                            <Link to={`/hotels/${hotelId}/edit`} className="button-edit" title="Click here to edit your post">Edit</Link>
+                            <button className="button" title="Click here to delete your post" onClick={deleteButtonClickHandler}>Delete</button> 
                         </div>                                                
                     )}    
 
