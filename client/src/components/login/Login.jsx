@@ -48,7 +48,7 @@ export default function Login() {
                     />
                     <input type="submit" id="btn-submit" value="Login" />
                     <p className="field">
-                        <span>If you don't have profile click <a href="/register">here</a></span>
+                        <span>If you don't have profile click <a href="/register" style={{ color: 'darkblue',}}>here</a></span>
                     </p>
                 </div>
             </form>

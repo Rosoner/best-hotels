@@ -70,7 +70,7 @@
     border: none;
     color: white;
     cursor: pointer;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +95,7 @@
     flex-direction: column;
     justify-content:center;
     /* margin-left: 0px !important; */
-    width: 4vh;
+    width: 13vh;
     height: 4vh;
   }
 

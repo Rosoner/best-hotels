@@ -20,10 +20,12 @@
     padding: 5px;
     color: white;
     opacity: 0.7;
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
 }
 
 .btn.close svg {
     color: white;
+    width: 30px;
+    height: 30px;
 }

@@ -22,11 +22,8 @@ export const AuthProvider = ({
     //     return {};
     // });
 
-// Persisted state auth?????
+
     const [auth, setAuth] = usePersistedState('auth', {});
-
-
-
     
 const loginSubmitHandler = async (value) => {
     const result = await authService.login(value.email, value.password);

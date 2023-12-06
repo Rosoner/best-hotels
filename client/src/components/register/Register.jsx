@@ -31,7 +31,7 @@ export default function Register() {
                         type="nickname"
                         id="username"
                         name="username"
-                        placeholder="Jakomo"
+                        placeholder="ivan"
                         onChange={onChange}
                         values={values[RegisterFormKeys.Username]}
                     />
@@ -67,7 +67,7 @@ export default function Register() {
                     <input id="btn-submit" type="submit" value="Register" />
 
                     <p className="field">
-                        <span>If you already have profile click <a href="#">here</a></span>
+                        <span>If you already have profile click <a href="/login" style={{ color: 'darkblue',}}>here</a></span>
                     </p>
                 </div>
             </form>

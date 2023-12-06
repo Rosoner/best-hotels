@@ -119,15 +119,18 @@ label[for="terms"]>input {
 }
 
 .field>span {
+    
+    display: block;
     position: absolute;
     font-size: 18px;
     bottom: 17px;
-    right: 8px;
+    right: 175px;
     text-decoration: none;
     color: black;
-    background: rgb(235, 157, 142);
+    background: rgb(113 175 193);
     border-radius: 10px;
     padding: 5px;
+    margin-top: 50px;
 }
 
 #btn-submit{
