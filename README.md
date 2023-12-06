@@ -2,12 +2,12 @@
 
 Best Hotels - React project
 
-Intro
+Intro-
 You can create your own publication with your favourite hotel in this blog! Also is possible to edit or delete your post in case that you are logged in. 
 Is allowed on all users to write comments about their posts or another posts. All guests can only read publications and comments.
 
 
-Usage
+Usage-
 Development server Run "node server.js" for a dev server. Navigate to (http://localhost:3030/). Admin panel is located at http://localhost:3030/admin
 
 This is REST service, created for educational purposes. A compiled bundle should be available with every exercise's resources. To execute it, run the included start.bat file, or manually open a command prompt and run node server.js.
