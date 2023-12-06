@@ -29,3 +29,9 @@
     width: 30px;
     height: 30px;
 }
+
+.btn:hover {
+    background-color: #555565;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 12px 12px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}

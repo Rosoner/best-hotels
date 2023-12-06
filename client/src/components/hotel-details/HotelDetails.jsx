@@ -85,10 +85,10 @@ export default function HotelDetails() {
             <div className="info-section">
                 <div className="hotel-header">
                     <img className="hotel-img" src={hotel.imageUrl} alt={hotel.name} />
-                    <h1>{hotel.name}</h1>
+                    <h1 id="title">{hotel.name}</h1>
                     <h5>{hotel.location}</h5>
                     <span >
-                        <Link to={hotel.link} ><span style={{ color: 'darkblue', fontSize:12}}>Visit web site</span></Link>
+                        <Link to={hotel.link} style={{ color: '#395f47', fontSize:12}}>To visit official web site <span style={{ color: 'darkblue', fontSize:12}}>click here</span></Link>
                     </span>  
                                     
                     <p className="type">{hotel.description}</p>
@@ -100,7 +100,7 @@ export default function HotelDetails() {
 
                     {userId === hotel._ownerId && isAuthenticated && (
                         <div className="buttons">
-                            <Link to={`/hotels/${hotelId}/edit`} className="button">Edit</Link>
+                            <Link to={`/hotels/${hotelId}/edit`} className="button-edit">Edit</Link>
                             <button className="button" onClick={deleteButtonClickHandler}>Delete</button> 
                         </div>                                                
                     )}    

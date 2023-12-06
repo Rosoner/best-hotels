@@ -11,6 +11,10 @@
     display: table-cell;
 }
 
+.details-comments > ul{
+    margin-bottom: 50px;
+}
+
 .create-comment {
     margin-top: 60px;
     position: relative;
@@ -33,10 +37,10 @@
 }
 
 .info-section>.details-comments li {
-    width: 400px;
+    width: 800px;
     display: inline-block;
     position: static;
-    margin: 20px auto 25px auto;
+    margin: 7px auto 7px auto;
     box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 12px 12px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 16px;
     margin-left: 60px;
@@ -53,4 +57,11 @@
     background-color: #41425c;
     color: white;
     cursor: pointer;
+}
+
+.no-comment{
+    color: rgb(147, 53, 53);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
 }

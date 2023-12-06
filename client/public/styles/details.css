@@ -48,6 +48,7 @@
 }
 
 .levels {
+    width: 900px;
     display: inline-block;
     margin-top: 15px ;
     margin-left: 15px ;
@@ -136,9 +137,25 @@
     border-radius: 7px; */
 }
 
+.button-edit{    
+    height: 50%;
+    background-color: #2a87a5;
+    padding: 7px 10px;
+    margin-top: auto;
+    font-size: 16px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+}
+
+.button-edit:hover {
+    background-color: #555565;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 12px 12px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}
+
 .button:hover {
     background-color: #555565;
-    /* box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 12px 12px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 12px 12px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
 }
 
@@ -155,3 +172,8 @@
     width: 980px;
 }
 
+#title{
+    
+    color: #9f3232;
+    
+}
