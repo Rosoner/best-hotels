@@ -84,12 +84,30 @@ export default function HotelDetails() {
 
             <div className="info-section">
                 <div className="hotel-header">
+
                     <img className="hotel-img" src={hotel.imageUrl} alt={hotel.name} />
+
                     <h1 id="title">{hotel.name}</h1>
+
                     <h5>{hotel.location}</h5>
-                    <span >
+                    {/* <div id="official-site">
                         <Link to={hotel.link} style={{ color: '#395f47', fontSize:12}}>To visit official web site <span style={{ color: 'darkblue', fontSize:12}}>click here</span></Link>
-                    </span>  
+                    </div>  */}
+                    <div id="official-site">
+                        <Link to={hotel.link} style={{ color: '#395f47', fontSize:12}}>Official web site</Link>
+                    </div> 
+                    
+
+                    {/* <Link to={hotel.link}>
+                        <img className="hotel-img" src={hotel.imageUrl} alt={hotel.name}
+                        title="Go to web site" />
+                    </Link> */}
+
+                    <div className="logo-details">
+                        <img src="../images/hotel_icon_1.png" alt="hero"/>
+                    </div>
+
+                    
                                     
                     <p className="type">{hotel.description}</p>
                                                            

@@ -23,7 +23,7 @@
     max-height: 90vh;
     margin: auto;
     border-radius: 20px;
-    background-color: #d2e7eb;
+    /* background-color: #d2e7eb; */
     padding: 1rem;
     box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
     z-index: 30;
@@ -134,4 +134,17 @@
     /* margin-left: 0px !important; */
     width: 4vh;
     height: 4vh;
+}
+
+.modal-user-details{
+  background-color: #d2e7eb;
+  width: 45rem;
+  position: absolute;
+  max-height: 90vh;
+  margin: auto;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+  z-index: 30;
+  margin-top: 50px;
 }

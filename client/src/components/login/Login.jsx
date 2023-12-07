@@ -14,12 +14,6 @@ export default function Login() {
         [LoginFormKyes.Password]: '',
     });
 
-        // const onChange = (e) => {
-        // setValues(state => ({
-        //     ...state,
-        //     [e.target.name]: e.target.value
-        // }));
-    // console.log(values);
 
     return (
         <section id="login-page" className="auth">

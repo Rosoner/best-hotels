@@ -9,7 +9,7 @@ export default function Home() {
                         <h2>Best hotels blog is here!!!</h2>
                     </div>
                 </div>
-                <img src="../images/hotel_3.png" alt="hero" />
+                <img src="../images/hotel_3.png" alt="hotel" />
             <div>
                 
             </div>

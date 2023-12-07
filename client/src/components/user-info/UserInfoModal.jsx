@@ -25,7 +25,7 @@ const UserInfoModal = ({
     return (
         <div className="overlay">
             <div className="backdrop" onClick={onClose}></div>
-            <div className="modal">
+            <div className="modal-user-details">
                 <div className="detail-container">
                     <header className="headers-info">
                         <h2>User Details:</h2>

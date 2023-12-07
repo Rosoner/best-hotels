@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import * as hotelService from '../../services/hotelService.js';
 import HotelListItem from './hotel-list-item/HotelListItem.jsx';
 import Spinner from "../../utils/Spinner.jsx";
+import { Link } from 'react-router-dom';
 
 export default function HotelList() {
     const [hotels, setHotels] = useState([]);
@@ -22,7 +23,12 @@ export default function HotelList() {
 
             {isLoading && <Spinner />}
 
+            <div className="logo-catalog">
+                <img src="../images/hotel_icon_2.png" alt="hero"/>
+            </div>
+
             <h1>All Hotels</h1>
+
 
             {hotels.map(hotel => (
                 <HotelListItem key={hotel._id} {...hotel} />
