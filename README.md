@@ -3,8 +3,9 @@
 Best Hotels - React project
 
 Intro-
-You can create your own publication with your favourite hotel in this blog! Also is possible to edit or delete your post in case that you are logged in. 
-Is allowed on all users to write comments about their posts or another posts. All guests can only read publications and comments.
+You can create your own publication on your favourite hotel in this blog! Also is possible to edit or delete your post in case that you are logged in. 
+Is allowed for all users to write comments about their own or another posts. 
+All guests can only read publications and comments. Also guest can see detailed information about each hotel and use link to visit official web site.
 
 
 Usage-
