@@ -80,7 +80,9 @@ export default function HotelDetails() {
                 />
             )}
 
-            <h1>Hotel Details</h1>
+            <h1 id="title-details">
+                Hotel Details
+            </h1>
 
             <div className="info-section">
                 <div className="hotel-header">

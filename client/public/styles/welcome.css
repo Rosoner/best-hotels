@@ -1,9 +1,13 @@
 #welcome-world {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
     width: auto;
-    padding-right: 15px;
-    padding-top: 1em;
+    /* padding-right: 15px; */
+    /* padding-top: 1em; */
     justify-content: right;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     position: relative;
     box-sizing: border-box;
     text-align: center;
@@ -26,6 +30,7 @@
     max-width: 100%;
     margin-left: auto;
     padding-left: auto;
+    border: 5px solid rgb(86, 107, 114);
 }
 
 .welcome-message h2 {
@@ -172,4 +177,17 @@
     font-weight: 700;
     font-size: 60px;
     font-family: "Agency FB";
+}
+
+.slogan{
+    margin-left: auto;
+    margin-top: auto;
+    position: absolute;
+    /* margin-top: -368px; */
+}
+
+.slogan-user{
+    margin-left: auto;
+    margin-top: auto;
+    text-align: center;
 }

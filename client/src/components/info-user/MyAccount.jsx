@@ -33,7 +33,7 @@ export default function MyAccount() {
                             />
                         )}
 
-                        <div className="slogan">
+                        <div className="slogan-user">
                             <h2 style={{ color: 'yellow', }}>User info:</h2>
                         </div>
 
