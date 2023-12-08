@@ -11,9 +11,10 @@
 #hotel-details>h1 {
     color: #fff;
     font-family: "Agency FB";
-    font-size: 55px;
+    /* font-size: 55px; */
+    font-size: 30px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 4px;
     text-transform: uppercase;
     text-align: center;
 }
