@@ -58,7 +58,7 @@ const UserInfoModal = ({
                             </p> */}
 
                             {/* <p>Created on: <strong>{formatDate({createdAt})}</strong></p> */}
-                            <p style={{ color: 'dark',}}>Created on: <strong>{formatDate({createdAt})}</strong></p>
+                            {/* <p style={{ color: 'dark',}}>Created on: <strong>{formatDate({createdAt})}</strong></p> */}
                             {/* <p>Modified on: <strong>{formatDate(user.updatedAt)}</strong></p> */}
                         </div>
                     </div>

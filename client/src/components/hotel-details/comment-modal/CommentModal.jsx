@@ -8,8 +8,6 @@ const CommentModal = ({ onClose, onCreate}) => {
             <div className="modal">
                 <div className="detail-container">
 
-
-
                     <article className="create-comment">
                         <header className="headers-comment">
                             <label>Add new comment:</label>

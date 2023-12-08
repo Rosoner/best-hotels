@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import * as hotelService from '../../services/hotelService.js';
 import HotelListItem from './hotel-list-item/HotelListItem.jsx';
 import Spinner from "../../utils/Spinner.jsx";
-import { Link } from 'react-router-dom';
+
 
 export default function HotelList() {
     const [hotels, setHotels] = useState([]);
