@@ -146,3 +146,26 @@ label[for="terms"]>input {
     box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px #514e4e;
     transition: 0.5s;
 }
+
+.form-error {
+    color: #d9534f;
+    min-height: 20px;
+  }
+
+
+ .errorMessage {
+    color: red;
+    font-size: 0.5em;
+    margin: 0 0 10px;
+}
+
+input.input-error,
+select.input-error {
+    border-color: red;
+    color: red;
+    background-color: yellow;
+}
+
+#btn-submit:disabled{
+    opacity: 0.35;
+}
