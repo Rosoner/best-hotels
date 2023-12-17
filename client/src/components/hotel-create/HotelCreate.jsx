@@ -14,9 +14,10 @@ export default function HotelCreate() {
             await hotelService.create(hotelData);
 
             navigate('/hotels');
-        } catch (err) {
+        } catch (error) {
             // Error notification
-            console.log(err);
+            console.log(error);
+            console.error("Error during registration:", error);
         }
     }
 
@@ -26,10 +27,10 @@ export default function HotelCreate() {
                 <div className="container">
                     <h1>Create Hotel</h1>
                     <label htmlFor="leg-name">Hotel:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter hotel name..." />
+                    <input type="text" id="name" name="name" placeholder="Enter hotel name..." required/>
 
                     <label htmlFor="location">Location:</label>
-                    <input type="text" id="location" name="location" placeholder="Enter hotel location..." />
+                    <input type="text" id="location" name="location" placeholder="Enter hotel location..." required/>
 
                     <label htmlFor="hotel-img">Image:</label>
                     <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..." />
@@ -38,7 +39,7 @@ export default function HotelCreate() {
                     <textarea name="summary" id="summary"></textarea>
 
                     <label htmlFor="description">Description:</label>
-                    <textarea name="description" id="description"></textarea>
+                    <textarea name="description" id="description" required></textarea>
 
                     <label htmlFor="facilities">Facilities:</label>
                     <input type="text" id="facilities" name="facilities" placeholder="Enter hotel facilities" />

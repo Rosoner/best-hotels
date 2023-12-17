@@ -43,15 +43,19 @@ export const AuthProvider = ({
     };
 
 
-const registerSubmitHandler = async (value) => {
-    const result = await authService.register( value.username, value.email, value.password);
+    const registerSubmitHandler = async (value) => {
+        try {
+            const result = await authService.register(value.username, value.email, value.password);
 
-    setAuth(result);
+            setAuth(result);
 
-    localStorage.setItem('accessToken', result.accessToken);
+            localStorage.setItem('accessToken', result.accessToken);
 
-    navigate(Path.Home);
-};
+            navigate(Path.Home);
+        } catch (error) {
+            setErr(error);
+        }
+    };
 
 
 const logoutHandler = () => {

@@ -61,7 +61,8 @@ export default function HotelEdit() {
                         name="name" 
                         value={hotel.name} 
                         onChange={onChange} 
-                        placeholder= "Enter hotel name" />
+                        placeholder= "Enter hotel name" 
+                        required/>
 
                     <label htmlFor="location">Location:</label>
                         <input type="text" 
@@ -69,7 +70,8 @@ export default function HotelEdit() {
                         name="location" 
                         value={hotel.location} 
                         onChange={onChange} 
-                        placeholder="Enter hotel location..." />
+                        placeholder="Enter hotel location..." 
+                        required/>
 
                     <label htmlFor="hotel-img">Image:</label>
                         <input type="text" 
@@ -89,7 +91,8 @@ export default function HotelEdit() {
                         <textarea name="description" 
                         value={hotel.description} 
                         onChange={onChange}
-                        id="description"></textarea>
+                        id="description"
+                        required></textarea>
 
                     <label htmlFor="facilities">Facilities:</label>
                         <input type="text" 

@@ -23,7 +23,7 @@ const CommentModal = ({ onClose, onCreate}) => {
                         </header>
 
                         <form className="form" onSubmit={onCreate}>
-                            <textarea name="comment" placeholder="Comment......"></textarea>
+                            <textarea name="comment" placeholder="Comment......" required></textarea>
                             <input id="btn-submit" type="submit" value="Add Comment" />
                             {/* <input className="btn submit" type="submit" value="Add Comment" /> */}
                         </form>
