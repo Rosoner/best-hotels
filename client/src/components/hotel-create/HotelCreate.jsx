@@ -27,19 +27,19 @@ export default function HotelCreate() {
                 <div className="container">
                     <h1>Create Hotel</h1>
                     <label htmlFor="leg-name">Hotel:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter hotel name..." required/>
+                    <input type="text" id="name" name="name" placeholder="Enter hotel name...(required)" required/>
 
                     <label htmlFor="location">Location:</label>
-                    <input type="text" id="location" name="location" placeholder="Enter hotel location..." required/>
+                    <input type="text" id="location" name="location" placeholder="Enter hotel location...(required)" required/>
 
                     <label htmlFor="hotel-img">Image:</label>
                     <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..." />
 
                     <label htmlFor="summary">Summary:</label>
-                    <textarea name="summary" id="summary"></textarea>
+                    <textarea name="summary" id="summary" placeholder="Write some summary..."></textarea>
 
                     <label htmlFor="description">Description:</label>
-                    <textarea name="description" id="description" required></textarea>
+                    <textarea name="description" id="description" placeholder="Write some description...(required)" required></textarea>
 
                     <label htmlFor="facilities">Facilities:</label>
                     <input type="text" id="facilities" name="facilities" placeholder="Enter hotel facilities" />
