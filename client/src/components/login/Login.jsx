@@ -75,22 +75,15 @@ export default function Login() {
                 return;
             }
 
-            // if (AuthContext.message) {
-            //     showError(AuthContext.message);
-            //     console.error(message)
-            //     return;
-            // }
         } catch (error) {
             AuthContext.error.message
-            // console.error("Error during registration:", error);
-            // console.error(AuthContext.message)
-            // console.alert(error.message)
+
         } finally {
             setShowRegisterMessage(true);
             setTimeout(() => {
                 setShowRegisterMessage(false);
                 setRegisterMessage({ message: "", variant: "" });
-            }, 3000);
+            }, 1000);
         }
     }
 

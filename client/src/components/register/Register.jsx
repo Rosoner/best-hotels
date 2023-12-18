@@ -90,12 +90,7 @@ export default function Register() {
                 email: 'Email is required!',
             }));
         }
-        // else if (values.email.length <= 3) {
-        //     setErrors(state => ({
-        //         ...state,
-        //         email: 'Email must be at least 4 characters long!',
-        //     }));
-        // }
+
         else {
             if (errors.email) {
                 setErrors(state => ({ ...state, email: '' }));
@@ -117,6 +112,7 @@ const onRegister = async () => {
                 values.password = values.confirmPassword ;
                 return;
             }
+            
 
         } catch (error) {
             console.error("Error during registration:", error);

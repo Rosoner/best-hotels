@@ -24,7 +24,7 @@ export default function HotelList() {
             {isLoading && <Spinner />}
 
             <div className="logo-catalog">
-                <img src="../images/hotel_icon_2.png" alt="hero"/>
+                <img src="../images/hotel_icon_2.png" alt="logo"/>
             </div>
 
             <h1>All Hotels</h1>

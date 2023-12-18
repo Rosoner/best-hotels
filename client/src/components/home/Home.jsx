@@ -23,8 +23,7 @@ export default function Home() {
                         <h2 style={{ color: 'yellow', fontSize: 22}}>Hello, {username}! 
                             Welcome to a world of Best hotels. </h2>
                             // Explore our selection of hotels and create post with your own!
-                        )}
-                        
+                        )}                        
                     </div>
                 </div>
                 <img src="../images/hotel_3.png" alt="hotel" />

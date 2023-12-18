@@ -30,9 +30,6 @@ export default function Header() {
                         <Link to="/logout">Logout</Link>
                         {/* <span style={{ color: 'yellow',}}>| Logged in: {username} |</span> */}
                         <Link to="/myaccount"><span style={{ color: 'yellow',}}>| Info user: {username} |</span></Link>
-
-                        
-
                     </div>
                 )}
 
