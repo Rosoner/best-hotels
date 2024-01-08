@@ -23,11 +23,11 @@ export default function Header() {
             </div>
             <h1><Link className="home" to="/">Best Hotels</Link></h1>
             <nav>
-                <Link to="/hotels">Catalog</Link>
+                <Link to="/hotels">CATALOG</Link>
                 {isAuthenticated && (
                     <div id="user">
-                        <Link to="/hotels/create">New hotel</Link>
-                        <Link to="/logout">Logout</Link>
+                        <Link to="/hotels/create">NEW HOTEL</Link>
+                        <Link to="/logout">LOGOUT</Link>
                         {/* <span style={{ color: 'yellow',}}>| Logged in: {username} |</span> */}
                         <Link to="/myaccount"><span style={{ color: 'yellow',}}>| Info user: {username} |</span></Link>
                     </div>
@@ -35,8 +35,8 @@ export default function Header() {
 
                 {!isAuthenticated && (
                     <div id="guest">
-                        <Link to="/login">Login</Link>
-                        <Link to="/register">Register</Link>
+                        <Link to="/login">LOGIN</Link>
+                        <Link to="/register">REGISTER</Link>
                     </div>
                 )}
             </nav>
