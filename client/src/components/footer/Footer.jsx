@@ -9,10 +9,6 @@ export default function Footer() {
                     <p className="copyright">2023 &copy; <strong>React project</strong> - All rights reserved.</p>
                 </div>
             </div>
-        
-        <p>
-            2024
-        </p>
         </div>
     </footer>
     );
