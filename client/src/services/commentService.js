@@ -1,6 +1,7 @@
 import * as request from '../lib/request';
 
-const baseUrl = 'http://localhost:3030/data/comments';
+const baseUrl = 'https://api-n4krry33ka-ew.a.run.app/data/comments';
+// const baseUrl = 'http://localhost:3030/data/comments';
 
 export const getAll = async (hotelId) => {
     const query = new URLSearchParams({

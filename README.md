@@ -1,6 +1,6 @@
 # best-hotels
 
-Best Hotels - React project
+Best Hotels - React project IMS
 
 Intro-
 You can create your own publication on your favourite hotel in this blog! Also is possible to edit or delete your post in case that you are logged in. 
